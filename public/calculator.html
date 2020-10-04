@@ -1,0 +1,134 @@
+<!DOCTYPE html>   
+<html>        
+  <head>         
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CD Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+ 
+    <style>
+        html, body{
+        background-color:#EAE7DC;
+        height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="https://images.squarespace-cdn.com/content/5a5fc7cae9bfdfdc04e13174/1589567485301-IBBZZGG4BNS7NM71LR4D/logo-social.png?content-type=image%2Fpng" width=200px height =200px/>
+    </div>
+    <div class="back">
+      <a href="/" class="button is success">Back</a>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="content">  
+          <h1>CD Calculator</h1>
+        </div>
+              <div class="card-content">
+                <form id="form">
+                  <div class="level">
+
+                    <!-- Left side -->
+                    <div class="field is-horizontal">
+                      <div class="field-label is normal">
+                        <label class="label">OPENING DEPOSIT</label>
+                      </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="field-body">
+                        <div class="field">
+                          <div class="control has-icons-left ">
+                            <input class="input" id="amount" type="number" />
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-dollar-sign"></i>
+                            </span>
+                          </div>
+                        </div>
+                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        
+
+                  <div class="level">
+                    <!-- Left side -->
+                    <div class="field is-horizontal">
+                        <div class="field-label is normal">
+                        <label class="label">NUMBER OF YEARS</label>
+                      </div>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                          <div class="select is-fullwidth">
+                                <span class="select" id="term">
+                            <select id ="years" input="text/number">
+                                <option>&nbsp &nbsp &nbsp &nbsp Select Terms &nbsp &nbsp &nbsp &nbsp</option>
+                                <option>1</option>
+                                <option>3</option>
+                                <option>5</option>
+                            </select>
+                        </span>         
+                          </div>
+                        </div>
+            
+                        <div class="control">
+                          <button type="submit" class="button is-primary"><b>&nbsp &nbsp Calculate &nbsp &nbsp</b></button>
+                        </div>
+                      </div>
+
+                     &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp 
+                      <div class="buttons">
+                        <button type="reset" class="button is success" onclick="refresh().computeResults">RESET</button></div>
+
+                </form>
+              </div>
+        </div>
+    
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section"> 
+      <h1 class="title ">ESTIMATED EARNINGS</h1>
+<div class="columns is-multiline">
+  
+  <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+    <div class="notification is-link has-text">
+      <p id="open" class="title is-1">$</p>
+      <p class="subtitle is-4">OPENING DEPOSIT</p>
+    </div>
+  </div>
+
+  <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+    <div class="notification is-info has-text">
+      <p id="openInterest" class="title is-1">%</p>
+      <p class="subtitle is-4">OFFERED INTEREST</p>
+    </div>
+  </div>
+
+  <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+    <div class="notification is-info has-text">
+      <p id="earnings" class="title is-1">$</p>
+      <p class="subtitle is-4">TOTAL EARNINGS</p>
+    </div>
+  </div>
+
+      <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+        <div class="notification is-primary has-text">
+          <p id="totalAmount" class="title is-1">$</p>
+          <p class="subtitle is-4">ENDING BALANCE</p>
+        </div>
+      </div>
+
+</div>
+</section>
+  </body>
+  <script src="app.js"></script>
+</html>

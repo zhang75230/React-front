@@ -1,0 +1,24 @@
+.signup-page {
+    background-color: rgb(250, 250, 250);
+}
+.page-form {
+    width: 25em;
+    margin: 3em auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2em;
+    background-color: rgb(234, 231, 220,0.7);
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-des {
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 1em;
+}

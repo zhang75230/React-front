@@ -1,0 +1,60 @@
+.about {
+    background-color: #F4F5F9;
+}
+.about h1, .about h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.about .title {
+    padding: 1em 0;
+}
+
+/* image container style*/
+.about .img-container {
+    margin: 1em 0 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about .img-container .card{
+    width: 20em;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.about .img-container .card hr {
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.about .img-container .card p {
+    color: #525252;
+}
+
+.about .img-container .card .role{
+    font-size: 18px;
+}
+
+.about .img-container .img-figure img {
+    border-radius: 50%;
+    width: 12em;
+    margin: auto;
+    display: block;
+}
+.about .img-container .linkedin {
+    border-top: 2px solid #e6e6e6;
+    padding: .5em;
+}
+
+@media screen and (max-width: 920px) {
+    .about .img-container {
+        margin: 1em 0 2em 0;
+        display: block;
+    } 
+    .about .img-container .card{
+        margin: 1em auto;
+    }
+}

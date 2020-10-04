@@ -1,0 +1,70 @@
+.container {
+    padding: 2em 0 1em 0;
+}
+.bank-card {
+    border: 1px solid black;
+    text-align: center;
+    padding: .5em;
+    margin-bottom: 10px;
+}
+
+.function-ctn {
+    border-bottom: 1px solid black;
+    margin: 0 0 1em 0;
+}
+
+.function-ctn .ctn {
+    margin: 0 .5em 0 .5em;
+}
+
+/* bank car design */
+.bank-card .account-type {
+    font-weight: bold;
+}
+
+.bank-card:hover {
+    background-color: #EAE7DC;
+    cursor: pointer;
+}
+
+.selected {
+    border-top: 5px solid #E98074;
+}
+
+.trans-func {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 2em 0;
+}
+
+.trans-func button {
+    margin: 0 2em;
+}
+
+/* pop up form */
+.pop-up .form-field{
+    margin: 1em 0 1em 0;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(78, 78, 78, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay div {
+    display: table !important;
+    color: white;
+    opacity: .8;
+    padding: 2em;
+}
